@@ -1,0 +1,50 @@
+.login {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  :global {
+    .login-box {
+      width: 320px;
+      height: 280px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      input {
+        width: 100%;
+        height: 37px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid #eee;
+        outline: none;
+        padding: 0 10px;
+        &:focus {
+          border-color: #0070f3;
+        }
+      }
+      .login-title {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .verify-code {
+        position: relative;
+        .send-btn {
+          position: absolute;
+          right: 0;
+          top: 7px;
+          color: #1890ff;
+        }
+      }
+      .login-btn {
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

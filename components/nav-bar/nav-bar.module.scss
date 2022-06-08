@@ -1,0 +1,31 @@
+.navbar {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  :global {
+    .logo-area {
+      font-size: 30px;
+      font-weight: bolder;
+      margin-right: 60px;
+    }
+    .link-area {
+      .link {
+        font-size: 18px;
+        padding: 0 20px;
+        color: black;
+        &.active {
+          color: #1890ff;
+        }
+      }
+    }
+    .operation-area {
+      margin-left: 150px;
+      button {
+        margin-right: 20px;
+      }
+    }
+  }
+}
