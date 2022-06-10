@@ -1,7 +1,7 @@
 import {NextApiRequest, NextApiResponse} from "next";
 import { withIronSessionApiRoute } from 'iron-session/next'
 import {ironOptions} from "config";
-import { ISession } from 'pages/api/index'
+import { ISession } from '../index'
 
 export default withIronSessionApiRoute(sendVerifyCode, ironOptions)
 

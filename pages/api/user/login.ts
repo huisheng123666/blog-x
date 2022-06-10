@@ -2,6 +2,7 @@ import {NextApiRequest, NextApiResponse} from "next";
 import { withIronSessionApiRoute } from 'iron-session/next'
 import {ironOptions} from "config";
 import { ISession } from '../index'
+import AppDataSource from 'db/index'
 
 export default withIronSessionApiRoute(login, ironOptions)
 
@@ -9,6 +10,7 @@ async function login(
   req: NextApiRequest,
   res: NextApiResponse<any>
 ) {
+  console.log(AppDataSource)
   const { phone, verify } = req.body
   const session = req.session as ISession
   session.destroy()
